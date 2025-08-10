@@ -1,0 +1,163 @@
+/* Page base */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f0f4ff, #f9fafb);
+  color: #1f2937;
+}
+
+/* Hero/Logo Section */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease;
+}
+
+.background {
+  width: 60%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: zoomFade 1s ease;
+}
+
+/* Grid container */
+.full-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+
+/* Individual card */
+.cards {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+  overflow: hidden;
+}
+
+.cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image */
+.cards img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Text inside cards */
+.cards h3,
+.cards p {
+  padding: 1rem;
+  margin: 0;
+  color: #374151;
+}
+
+.cards h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cards p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .background {
+    width: 90%;
+  }
+
+  .full-cards {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}
+.mm{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cn{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mss{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flat{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ss{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dm{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
