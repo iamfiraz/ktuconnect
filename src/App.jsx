@@ -5,7 +5,7 @@ import About from './components/About'
 import Login from './components/Login'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-import './app.css';
+import './App.css';
 import Flat from './components/Flat'
 import Dmcst from './components/Dmcst'
 import Cncst from './components/Cncst'
